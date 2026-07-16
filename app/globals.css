@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 32% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 32% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 32% 12%;
+    --primary: 24 78% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 43% 94%;
+    --secondary-foreground: 24 52% 24%;
+    --muted: 42 20% 96%;
+    --muted-foreground: 222 12% 42%;
+    --accent: 156 22% 92%;
+    --accent-foreground: 160 35% 20%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 18% 88%;
+    --input: 30 18% 88%;
+    --ring: 24 78% 42%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: Arial, "Noto Sans Myanmar", "Myanmar Text", "Padauk", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
