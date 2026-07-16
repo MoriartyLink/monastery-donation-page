@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  ArrowRight,
   BadgeCheck,
   Banknote,
   CalendarDays,
@@ -57,18 +58,11 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent" />
 
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-between px-4 py-6 sm:px-6 lg:px-8">
-          <nav className="flex items-center justify-between rounded-lg border border-white/70 bg-white/82 px-4 py-3 shadow-soft backdrop-blur">
+          <nav className="rounded-lg border border-white/70 bg-white/82 px-4 py-3 shadow-soft backdrop-blur">
             <div>
               <p className="text-sm font-bold text-primary">သမိဒ္ဓေါဒယတိုက်ခွဲ ဓမ္မသုခချောင်</p>
               <p className="text-xs text-muted-foreground">စစ်ကိုင်းတောင်ရိုး | သဓိဒ္ဓေါဒယတိုက်ခွဲ</p>
             </div>
-            <a
-              href="tel:09400472795"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md border bg-white text-primary shadow-sm transition-colors hover:bg-secondary"
-              aria-label="ဖုန်းခေါ်ရန်"
-            >
-              <Phone className="h-4 w-4" />
-            </a>
           </nav>
 
           <div className="grid items-end gap-8 pb-10 pt-14 lg:grid-cols-[1.05fr_0.95fr]">
@@ -87,6 +81,20 @@ export default function Home() {
                 ဆောက်လုပ်ရေးပစ္စည်းနှင့် အရေးပေါ်အသုံးစရိတ်များ လိုအပ်နေပါသည်။
                 အလှူငွေနည်းများစွာဖြင့်လည်း ပါဝင်ကူညီနိုင်ပါသည်။
               </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Button asChild size="lg">
+                  <a href="tel:09776257518">
+                    <Smartphone className="h-4 w-4" />
+                    KPay ဖြင့် အမြန်လှူဒါန်းရန်
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <a href="#gallery">
+                    မှတ်တမ်းများ ကြည့်ရန်
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
             </div>
 
             <Card className="border-white/80 bg-white/92 shadow-soft backdrop-blur">
@@ -112,7 +120,7 @@ export default function Home() {
                       className="border-white/40 bg-white text-primary hover:bg-white/90"
                     />
                   </div>
-                  <p className="mt-1 font-semibold">Daw Thu Sandar</p>
+                  <p className="mt-1 font-semibold">Ma Thu Sandar</p>
                   <p className="text-sm opacity-90">ဆရာကြီး ကျောင်းတိုက်ရိုက် အလှူခံ</p>
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -191,15 +199,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <section id="gallery" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
             <Badge variant="outline">ဆောက်လုပ်ရေးအခြေအနေ</Badge>
             <h2 className="mt-4 text-3xl font-black tracking-normal">ကျောင်းဆောင်နှင့် လက်ရှိအခြေအနေ</h2>
           </div>
-          <p className="max-w-xl leading-8 text-muted-foreground">
-            ပုံများကို အလှူရှင်များအတွက် လက်ရှိအခြေအနေမြင်သာစေရန် စုစည်းထားသည်။
-          </p>
         </div>
         <div className="grid gap-4 md:grid-cols-5">
           {gallery.map((image, index) => (
