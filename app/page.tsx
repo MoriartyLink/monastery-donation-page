@@ -1,6 +1,5 @@
 import Image from "next/image";
 import {
-  ArrowRight,
   BadgeCheck,
   Banknote,
   CalendarDays,
@@ -88,20 +87,6 @@ export default function Home() {
                 ဆောက်လုပ်ရေးပစ္စည်းနှင့် အရေးပေါ်အသုံးစရိတ်များ လိုအပ်နေပါသည်။
                 အလှူငွေနည်းများစွာဖြင့်လည်း ပါဝင်ကူညီနိုင်ပါသည်။
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button asChild size="lg">
-                  <a href="tel:09776257518">
-                    <Smartphone className="h-4 w-4" />
-                    KPay ဖြင့် အမြန်လှူဒါန်းရန်
-                  </a>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <a href="#documents">
-                    မှတ်တမ်းများ ကြည့်ရန်
-                    <ArrowRight className="h-4 w-4" />
-                  </a>
-                </Button>
-              </div>
             </div>
 
             <Card className="border-white/80 bg-white/92 shadow-soft backdrop-blur">
