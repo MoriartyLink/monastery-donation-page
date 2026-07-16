@@ -139,7 +139,26 @@ export default function Home() {
                   <div className="rounded-lg border bg-white p-3">
                     <Phone className="mb-2 h-5 w-5 text-primary" />
                     <p className="text-sm font-semibold">ဆက်သွယ်ရန်</p>
-                    <p className="mt-1 text-xs text-muted-foreground">09-400472795 / 09-782876237</p>
+                    <div className="mt-2 space-y-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="text-xs font-semibold text-muted-foreground">09-400472795</p>
+                        <CopyButton
+                          value="09400472795"
+                          label="Copy"
+                          copiedLabel="Copied"
+                          className="h-7 px-2 text-[10px]"
+                        />
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="text-xs font-semibold text-muted-foreground">09-782876237</p>
+                        <CopyButton
+                          value="09782876237"
+                          label="Copy"
+                          copiedLabel="Copied"
+                          className="h-7 px-2 text-[10px]"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -231,7 +250,35 @@ export default function Home() {
                   <Phone className="mt-1 h-5 w-5 text-primary" />
                   <div>
                     <p className="font-bold">ဖုန်း</p>
-                    <p className="text-sm leading-7 text-muted-foreground">KPay 09-776257518<br />09-400472795<br />09-782876237</p>
+                    <div className="mt-2 space-y-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="text-sm font-semibold text-muted-foreground">KPay 09-776257518</p>
+                        <CopyButton
+                          value="09776257518"
+                          label="Copy"
+                          copiedLabel="Copied"
+                          className="h-7 px-2 text-[10px]"
+                        />
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="text-sm font-semibold text-muted-foreground">09-400472795</p>
+                        <CopyButton
+                          value="09400472795"
+                          label="Copy"
+                          copiedLabel="Copied"
+                          className="h-7 px-2 text-[10px]"
+                        />
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="text-sm font-semibold text-muted-foreground">09-782876237</p>
+                        <CopyButton
+                          value="09782876237"
+                          label="Copy"
+                          copiedLabel="Copied"
+                          className="h-7 px-2 text-[10px]"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="flex gap-3">
